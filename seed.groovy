@@ -34,10 +34,10 @@ def createJob(application, parameters){
                     fortifyOther()
                 } 
                 uploadSSC {
-                    appName: application
-                    appVersion: parameters.branch
+                    appName(application)
+                    appVersion(parameters.branch)
                 }
+            }
         }
-
     }
 }   
