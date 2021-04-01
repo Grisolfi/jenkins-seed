@@ -14,3 +14,12 @@ Playing around with [Job DSL Plugin](https://plugins.jenkins.io/job-dsl/)
 1. Then the seed job works well
 
 [Source](https://issues.jenkins.io/browse/JENKINS-43509)
+
+**ERROR: Scripts not permitted to use new groovy.util.ConfigSlurper.**
+**ERROR: Scripts not permitted to use method java.lang.Class getClassLoader**
+**ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper setClassLoader groovy.lang.GroovyClassLoader**
+**ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper parse java.lang.String**
+1. Navigate to jenkins > Manage jenkins > In-process Script Approval
+1. There was a pending command, which I had to approve.
+
+[Source](https://stackoverflow.com/questions/38276341/jenkins-ci-pipeline-scripts-not-permitted-to-use-method-groovy-lang-groovyobject)
