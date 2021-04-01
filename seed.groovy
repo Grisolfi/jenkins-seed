@@ -30,7 +30,7 @@ def createJob(application, parameters){
         }
         fortifyPlugin {
             remoteAnalysisProjectType {
-                fortifyOther()
+                fortifyOther{}
             }
         }
         uploadSSC {
