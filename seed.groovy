@@ -29,13 +29,15 @@ def createJob(application, parameters){
             }
         }
         fortifyPlugin {
-            remoteAnalysisProjectType {
-                fortifyOther{}
+            analysisRunType {
+                remoteAnalysisProjectType {
+                    fortifyOther()
+                }
+                uploadSSC {
+                    appName(application)
+                    appVersion(parameters.branch)
+                }
             }
-        }
-        uploadSSC {
-            appName(application)
-            appVersion(parameters.branch)
         }
     }
 }   
