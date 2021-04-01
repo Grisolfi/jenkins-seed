@@ -10,7 +10,7 @@ config.applications.each {application, parameters ->
 
 def createJob(application, parameters){
     job(application){
-        description(application.description)
+        description(parameters.description)
         displayName("simple-job-$application")
         environmentVariables{
             env('APPLICATION_NAME', application)
