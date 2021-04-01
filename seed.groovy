@@ -30,8 +30,8 @@ def createJob(application, parameters){
         }
         publishers {
             fortifyPlugin {
-                value('whatever')
                 analysisRunType {
+                    value('whatever')
                     remoteAnalysisProjectType {
                         fortifyOther()
                     }
