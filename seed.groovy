@@ -32,4 +32,5 @@ def createJob(application, parameters){
             shell('''echo "Hello from $application"''')
         }
 
-    }   
+    }
+}   
