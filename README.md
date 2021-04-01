@@ -15,10 +15,11 @@ Playing around with [Job DSL Plugin](https://plugins.jenkins.io/job-dsl/)
 
 [Source](https://issues.jenkins.io/browse/JENKINS-43509)
 
-**ERROR: Scripts not permitted to use new groovy.util.ConfigSlurper.**
-**ERROR: Scripts not permitted to use method java.lang.Class getClassLoader**
-**ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper setClassLoader groovy.lang.GroovyClassLoader**
-**ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper parse java.lang.String**
+**ERROR: Scripts not permitted to use new groovy.util.ConfigSlurper.**  
+**ERROR: Scripts not permitted to use method java.lang.Class getClassLoader**  
+**ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper setClassLoader groovy.lang.GroovyClassLoader**  
+**ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper parse java.lang.String**  
+**ERROR: Scripts not permitted to use method groovy.lang.GroovyObject invokeMethod java.lang.String java.lang.Object**  
 1. Navigate to jenkins > Manage jenkins > In-process Script Approval
 1. There was a pending command, which I had to approve.
 

@@ -1,5 +1,5 @@
 applications {
-     sipp-agent {
+     'sipp-agent' {
         url = 'https://github.com/Grisolfi/sipp-agent.git'
         branch = 'master'
         fortify {
