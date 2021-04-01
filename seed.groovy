@@ -28,19 +28,19 @@ def createJob(application, parameters){
                 }
             }
         }
-        fortifyPlugin {
-            analysisRunType {
-                remoteAnalysisProjectType {
-                    fortifyPython {
-                        pythonRequirementsFile('requirements.txt')
-                        pythonVersion('3')
+        publishers {
+            fortifyPlugin {
+                analysisRunType {
+                    remoteAnalysisProjectType {
+                        fortifyOther()
                     }
-                }
-                uploadSSC {
-                    appName(application)
-                    appVersion(parameters.branch)
+                    uploadSSC {
+                        appName(application)
+                        appVersion(parameters.branch)
+                    }
                 }
             }
         }
+
     }
 }   
