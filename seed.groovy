@@ -9,7 +9,7 @@ config.applications.each {application, parameters ->
 }
 
 def createJob(application, parameters){
-    job(application){
+    freeStyleJob(application){
         description(parameters.description)
         displayName("simple-job-$application")
         environmentVariables{
