@@ -29,7 +29,7 @@ def createJob(application, parameters){
             }
         }
         steps {
-            fortifyRemoteAnalysis remoteAnalysisProjectType: fortifyOther, uploadSSC: [appName: 'test', appVersion: 'test']
+            fortifyRemoteAnalysis remoteAnalysisProjectType: fortifyOther(''), uploadSSC: [appName: 'test', appVersion: 'test']
         }
     }
 }   
