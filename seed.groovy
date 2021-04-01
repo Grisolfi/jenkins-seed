@@ -31,7 +31,10 @@ def createJob(application, parameters){
         fortifyPlugin {
             analysisRunType {
                 remoteAnalysisProjectType {
-                    fortifyOther()
+                    fortifyPython {
+                        pythonRequirementsFile('requirements.txt')
+                        pythonVersion('3')
+                    }
                 }
                 uploadSSC {
                     appName(application)
