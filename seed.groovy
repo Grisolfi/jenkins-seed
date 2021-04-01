@@ -29,7 +29,7 @@ def createJob(application, parameters){
             }
         }
         steps {
-            shell("echo \"Hello from $APPLICATION_NAME and $APPLICATION_VERSION \"")
+            fortifyRemoteAnalysis remoteAnalysisProjectType: fortifyOther(), uploadSSC: [appName: application, appVersion: parameters.branch]
         }
 
     }
