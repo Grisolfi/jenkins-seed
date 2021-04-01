@@ -5,6 +5,5 @@ applications {
         fortify {
             remoteAnalysisProjectType = 'fortifyOther'
         }
-        description = 'Agent that control sipp based on statistic files bindings'
     }
 }
