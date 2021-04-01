@@ -1,7 +1,18 @@
 # Jenkins Seed
 
 Playing around with [Job DSL Plugin](https://plugins.jenkins.io/job-dsl/)
+It proposes to create all your jobs by configuration scripts .dsl and its definition on .groovy
 
+## Usage
+
+1. Install [Job DSL Plugin](https://plugins.jenkins.io/job-dsl/)
+1. Install [Authorize Project Plugin](https://plugins.jenkins.io/authorize-project/)
+1. Create a Freestyle project on your jenkins instance called "Seed"
+1. Configure Source code management to point to this repository.
+1. Add a "Process Job DSLs" build step and check "Look on filesystem"
+1. Add *.groovy* to DSL Scripts field
+1. Check "Use Groovy Sandbox"
+1. Save and Run !
 
 ## Troubleshoot
 
