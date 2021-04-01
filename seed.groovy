@@ -29,7 +29,7 @@ def createJob(application, parameters){
             }
         }
         steps {
-            shell('''echo "Hello from $application"''')
+            shell("echo \"Hello from $application\"")
         }
 
     }

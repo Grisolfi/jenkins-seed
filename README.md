@@ -20,7 +20,8 @@ Playing around with [Job DSL Plugin](https://plugins.jenkins.io/job-dsl/)
 **ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper setClassLoader groovy.lang.GroovyClassLoader**  
 **ERROR: Scripts not permitted to use method groovy.util.ConfigSlurper parse java.lang.String**  
 **ERROR: Scripts not permitted to use method groovy.lang.GroovyObject invokeMethod java.lang.String java.lang.Object**
-**ERROR: Scripts not permitted to use staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods println groovy.lang.Closure java.lang.Object**  
+**ERROR: Scripts not permitted to use staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods println groovy.lang.Closure java.lang.Object**
+And also any Error like this:  
 1. Navigate to jenkins > Manage jenkins > In-process Script Approval
 1. There was a pending command, which I had to approve.
 
